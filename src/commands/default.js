@@ -46,6 +46,9 @@ export class DefaultCommand extends Command {
       );
       process.exit(1);
     }
+
+    this.yamlObject.supergraph.graphref = this.graphref
+
     let res = await fetchSubgraphsFromStudio(this.graphref)
     if (!res || !res.subgraphs) {
       this.context.stderr.write(
