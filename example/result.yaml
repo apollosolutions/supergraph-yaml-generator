@@ -1,0 +1,40 @@
+supergraph:
+  graphref: Webinar-Contracts-Demo@prod
+subgraphs:
+  new_subgraph:
+    schema:
+      file: ./example/schema.graphql
+    routing_url: http://localhost:8080
+  users:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: users
+  shipping:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: shipping
+  reviews:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: reviews
+  products:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: products
+  orders:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: orders
+  inventory:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: inventory
+  discovery:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: discovery
+  checkout:
+    schema:
+      graphref: Webinar-Contracts-Demo@prod
+      subgraph: checkout
+federation_version: '=2.5.0'

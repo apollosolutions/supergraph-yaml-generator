@@ -1,0 +1,7 @@
+supergraph:
+  graphref: Webinar-Contracts-Demo@prod
+subgraphs:
+  new_subgraph:
+    schema:
+      file: ./example/schema.graphql
+    routing_url: http://localhost:8080

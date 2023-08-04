@@ -1,0 +1,19 @@
+query SubgraphsForVariant($ref: ID!) {
+  variant(ref: $ref) {
+    __typename
+    ... on GraphVariant {
+      id
+      subgraphs {
+        name
+      }
+      latestLaunch {
+        buildInput {
+          __typename
+          ... on CompositionBuildInput {
+            version
+          }
+        }
+      }
+    }
+  }
+}
