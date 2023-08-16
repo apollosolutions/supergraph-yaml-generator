@@ -13,7 +13,7 @@
     "graphql-tag": "^2.12.6",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
-    "make-fetch-happen": "^10.1.8"
+    "make-fetch-happen": "^13.0.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.13.12",
